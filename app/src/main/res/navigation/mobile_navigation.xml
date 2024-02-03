@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_esta"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.establecimientos.EstablecimientoFragment"
+        android:label="@string/esta"
+        tools:layout="@layout/fragment_establecimientos" >
+        <action
+            android:id="@+id/action_nav_esta_to_addEstablecimientos"
+            app:destination="@id/addEstablecimientos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_prod"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.productos.ProductosFragment"
+        android:label="@string/produ"
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_nav_prod_to_addProductos"
+            app:destination="@id/addProductos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_histo"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.historico.HistoricoFragment"
+        android:label="@string/histo"
+        tools:layout="@layout/fragment_historico" />
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.inicio.InicioFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/addEstablecimientos"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.add.establecimientos.AddEstablecimientos"
+        android:label="@string/addEsta"
+        tools:layout="@layout/fragment_add_establecimientos" />
+    <fragment
+        android:id="@+id/addProductos"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.add.producto.AddProductos"
+        android:label="@string/addProd"
+        tools:layout="@layout/fragment_add_productos" />
+    <fragment
+        android:id="@+id/nav_aboutme"
+        android:name="edu.jorgefabro.mylittleshoppinglist.ui.aboutme.AboutMe"
+        android:label="@string/cred"
+        tools:layout="@layout/fragment_about_me" />
+</navigation>

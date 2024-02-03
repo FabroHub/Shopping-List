@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add.producto.AddProductos"
+    android:orientation="vertical"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etNombreP"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:hint="@string/nEsta"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etCant"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:singleLine="true"
+                android:hint="@string/canti"
+                android:inputType="phone"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:hint="@string/precio"
+                android:inputType="phone"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tiendas"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinnerTiendas"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:minWidth="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="35dp"
+        android:hint="@string/para_a_adir_un_producto_es_necesario_crear_primero_una_tienda"/>
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnAcepList"
+        android:textStyle="bold"
+        android:background="@drawable/background_buttons"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/btnAcepEsta"/>
+</FrameLayout>

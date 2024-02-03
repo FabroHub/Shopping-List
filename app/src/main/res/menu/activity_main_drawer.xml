@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_baseline_rocket_launch_24"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_esta"
+            android:icon="@drawable/ic_baseline_add_home_24"
+            android:title="@string/esta" />
+        <item
+            android:id="@+id/nav_prod"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="@string/produ" />
+
+        <item
+            android:id="@+id/nav_histo"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/histo" />
+
+        <item
+            android:id="@+id/nav_aboutme"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/cred" />
+    </group>
+</menu>

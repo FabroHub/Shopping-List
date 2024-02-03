@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_models"
+    android:layout_height="140dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlEsta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="5dp">
+
+                <TextView
+                    android:id="@+id/twNombreE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp">
+
+                <TextView
+                    android:id="@+id/twTelfN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/tlf" />
+
+                <TextView
+                    android:id="@+id/twTelf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:textColor="@color/white"
+                    android:autoLink="phone"
+                    android:textIsSelectable="true"
+                    android:layout_marginStart="5dp"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/twDireccionN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/dire"/>
+
+                <TextView
+                    android:id="@+id/twDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBot2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp">
+
+                <TextView
+                    android:id="@+id/twUrlN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/url" />
+
+                <TextView
+                    android:id="@+id/twUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:clickable="true"
+                    android:autoLink="web"
+                    android:textIsSelectable="true"
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

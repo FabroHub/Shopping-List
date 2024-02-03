@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add.establecimientos.AddEstablecimientos"
+    android:id="@+id/flAddEsta"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etNombreE"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/nEsta"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="100dp"
+                android:textAlignment="textEnd"/>
+
+            <EditText
+                android:id="@+id/etDireccion"
+                android:textSize="25sp"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="8"
+                android:hint="@string/direc"
+                android:singleLine="true"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etTelf"
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/telf"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:singleLine="true"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAcepEsta"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/background_buttons"
+        android:text="@string/btnAcepEsta"/>
+</FrameLayout>
